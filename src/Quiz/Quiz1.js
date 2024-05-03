@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import Header from '../component/Header'
 import Splash from '../component/Splash'
@@ -29,16 +30,13 @@ const QuizStepBox = ({ step, question, options, onSelect, imageList }) => {
                 </div>
             </div>
             <div className='right_section'>
-                {
-                    imageList ? <img src={imageList} /> : null
-                }
-
+                <img src={require('../assets/images/eema.jpg')} />
             </div>
         </div>
     );
 };
 
-export default function Quiz() {
+export default function Quiz1() {
 
     const navigate = useNavigate();
 
@@ -52,11 +50,12 @@ export default function Quiz() {
     };
 
     const steps = [
+       
         {
-            id: 1,
-            question: 'In what country was Elon Musk born?',
-            options: ['South Africa', 'India', 'Singapore', 'UAE'],
-
+            id: 2,
+            question: 'Identify the person in the picture',
+            options: ['Jim Carrey', 'Emma Watson', 'Robert Downey', 'Chris Evans.'],
+            
         }
     ];
 
@@ -99,7 +98,7 @@ export default function Quiz() {
                 <Header />
                 <div className='quiz-page'>
                     <div className='total_question'>
-                        <h5 className=''>1/5</h5>
+                        <h5 className=''>2/5</h5>
                     </div>
                     <div className='Quiz_box'>
 
@@ -114,7 +113,7 @@ export default function Quiz() {
 
                                 />
                                 <div className='button_group'>
-                                    <button onClick={()=>navigate('/quiz1')}>Next</button>
+                                    <button onClick={()=>navigate('/quiz2')}>Next</button>
                                 </div>
                             </>
                         ) : (

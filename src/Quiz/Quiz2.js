@@ -38,9 +38,9 @@ const QuizStepBox = ({ step, question, options, onSelect, imageList }) => {
     );
 };
 
-export default function Quiz() {
+export default function Quiz2() {
 
-    const navigate = useNavigate();
+    const naviogate = useNavigate();
 
     const [currentStep, setCurrentStep] = useState(1);
     const [answers, setAnswers] = useState([]);
@@ -54,10 +54,11 @@ export default function Quiz() {
     const steps = [
         {
             id: 1,
-            question: 'In what country was Elon Musk born?',
-            options: ['South Africa', 'India', 'Singapore', 'UAE'],
+            question: 'What is the capital city of Japan?',
+            options: ['Beijing', 'Tokyo', 'Seoul', 'Bangkok'],
 
-        }
+        },
+        
     ];
 
     useEffect(() => {
@@ -99,7 +100,7 @@ export default function Quiz() {
                 <Header />
                 <div className='quiz-page'>
                     <div className='total_question'>
-                        <h5 className=''>1/5</h5>
+                        <h5 className=''>3/5</h5>
                     </div>
                     <div className='Quiz_box'>
 
@@ -114,7 +115,7 @@ export default function Quiz() {
 
                                 />
                                 <div className='button_group'>
-                                    <button onClick={()=>navigate('/quiz1')}>Next</button>
+                                    <button onClick={()=>naviogate('/quiz3')}>Next</button>
                                 </div>
                             </>
                         ) : (

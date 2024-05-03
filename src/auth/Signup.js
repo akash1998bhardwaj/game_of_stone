@@ -1,8 +1,11 @@
 import React from 'react'
 import { AvForm, AvField } from 'availity-reactstrap-validation';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Signup() {
+
+    const navigate = useNavigate();
+
     return (
         <div className='auth-section'>
             <div className='auth-login-form'>
@@ -13,7 +16,7 @@ export default function Signup() {
                     <AvField name="mobile" placeholder="Mobile" type="text" />
                     <AvField name="otp" placeholder="OTP" type="text" />
                     <AvField name="password" placeholder="Password" type="text" />
-                    <button color="primary">Submit</button>
+                    <button color="primary" onClick={()=>navigate('/leaderboard')}>Submit</button>
                     <h6 className='mt-4'>Already have an account?<Link to={"/login"}> Login</Link></h6>
                 </AvForm>
             </div>

@@ -31,12 +31,12 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-6'>
-                                    <a href='#'>
+                                    <Link to='/dashboard'>
                                         <div className='card_box'>
                                             <h4>Dashboard</h4>
                                             <img src={require('../assets/images/quiz.png')} alt='quiz' />
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='col-lg-3 col-md-6 col-6'>
                                     <a href='#'>

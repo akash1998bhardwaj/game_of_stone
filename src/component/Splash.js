@@ -34,9 +34,11 @@ export default function Splash() {
                 <div className="loading">
                     <div className="text">Loading...</div>
 
-                    <div className="progress-bar">
-                        <label className="percent">{count}%</label>
-                        <div className="progress" style={{ width: `${per}px` }}></div>
+                    <div className='progress-bar-main'>
+                        <div className="progress-bar">
+                            <label className="percent">{count}%</label>
+                            <div className="progress" style={{ width: `${per}px` }}></div>
+                        </div>
                     </div>
                 </div>
             </div>
