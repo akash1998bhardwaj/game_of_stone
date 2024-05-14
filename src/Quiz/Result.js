@@ -27,7 +27,7 @@ export default function Result() {
                     </ul>
                 </div>
                 <div className='play_now'>
-                    <Link to={"/quiz"} className='shine' >Play Now</Link>
+                    <Link to={"/quiz"} className='shine' >Play Again</Link>
                 </div>
             </div>
         </div>

@@ -100,7 +100,7 @@ export default function Quiz4() {
                 <Header />
                 <div className='quiz-page'>
                     <div className='total_question'>
-                        <h5 className=''>4/5</h5>
+                        <h5 className=''>5/5</h5>
                     </div>
                     <div className='Quiz_box'>
 

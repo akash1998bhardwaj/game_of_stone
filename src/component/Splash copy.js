@@ -6,15 +6,11 @@ export default function Splash() {
     const [count, setCount] = useState(4);
     const [per, setPer] = useState(16);
     const [loading, setLoading] = useState(null);
-    useEffect(() => {
-		window.scrollTo(0, 0);
-		
-	}, [])
-    useEffect(() => {
-        setTimeout(() => {
-            naviogate('/login')
-        }, 4000)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         naviogate('/login')
+    //     }, 4000)
+    // }, [])
     useEffect(() => {
         setLoading(setInterval(animate, 50));
         return () => clearInterval(loading);
@@ -32,7 +28,7 @@ export default function Splash() {
     return (
         <div className='splash-screen'>
             <div className='logo-section'>
-                <img src={require('../assets/images/logo.png')} alt='logo' />
+                <img src={require('../assets/images/game-of-stone.png')} alt='logo' />
             </div>
             <div className='loading_section'>
                 <div className="loading">

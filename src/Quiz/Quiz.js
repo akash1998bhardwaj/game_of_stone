@@ -13,9 +13,24 @@ const QuizStepBox = ({ step, question, options, onSelect, imageList }) => {
 
     return (
         <div className='quize_main_box'>
-            {/* <h2>Step {step}</h2> */}
+            <div className='question_section'>
+                <h3>Cat : Sports</h3>
+                <div className='question_progress'>
+                    <div className='question_progress_'>
+                        <div className='progress_line'></div>
+                    </div>
+                    <h5>4/100</h5>
+                </div>
+            </div>
             <div className='left_section'>
-                <p className='question'>{question}</p>
+                <div className='question_box'>
+                    <div className='question_img'>
+                        <img src='https://plus.unsplash.com/premium_photo-1671482215376-f5dc225287cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8' />
+                    </div>
+                    <div className='question_'>
+                        <p className='question'>{question}</p>
+                    </div>
+                </div>
                 <div className='answer_list'>
                     {options.map((option, index) => (
                         <button
@@ -82,7 +97,7 @@ export default function Quiz() {
         // }
         if (currentStep < steps.length) {
             setCurrentStep(currentStep + 1);
-            
+
             setIndex(steps[currentStep + 1]?.id)
             setImageList(steps[index])
 
@@ -114,7 +129,7 @@ export default function Quiz() {
 
                                 />
                                 <div className='button_group'>
-                                    <button onClick={()=>navigate('/quiz1')}>Next</button>
+                                    <button onClick={() => navigate('/quiz1')}>Next</button>
                                 </div>
                             </>
                         ) : (

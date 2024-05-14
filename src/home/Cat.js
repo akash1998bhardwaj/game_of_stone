@@ -1,11 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../component/Header'
 import Splash from '../component/Splash'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useNavigation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export default function Cat() {
 
+    const [cat, setCat] = useState(false)
 
+    const navigator = useNavigate()
+
+
+    const playBtn = () => {
+        if (cat) {
+          navigator('/quiz')
+        } else {
+            toast.error('Please select a category')
+        }
+    }
 
     return (
         <>
@@ -13,70 +25,125 @@ export default function Cat() {
             <div className='home_page_section'>
                 <Header />
                 <div className='home-page'>
-                    <div className='cat_header'>
-                        <h3 className='cat_title'>Choose Category</h3>
+                    <div className='cat_header_1' >
+                        <Link className='cat_title_new' to={"/leaderboard"}>
+                            <img src={require('../assets/images/left-chevron1.png')} />
+                            Select Category
+                        </Link>
                     </div>
-                    <div className='category-section'>
+                    <div className='category-section category_section' >
                         <div className='container-fluid'>
                             <div className='row'>
 
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <Link to='/leaderboard'>
-                                        <div className='card_box'>
+                                <div className='col-6'>
 
-                                            <img src={require('../assets/images/sports.jpg')} alt='quiz' />
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/games.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>Sports</h4>
+                                            <span>200 Quiz</span>
                                         </div>
-                                    </Link>
-                                </div>
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <Link to='/dashboard'>
-                                        <div className='card_box'>
+                                    </div>
 
-                                            <img src={require('../assets/images/education.jpg')} alt='quiz' />
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/edu.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>Educational</h4>
+                                            <span>800 Quiz</span>
                                         </div>
-                                    </Link>
-                                </div>
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <a href='#'>
-                                        <div className='card_box'>
 
-                                            <img src={require('../assets/images/entertainment.jpg')} alt='quiz' />
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/ent.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>Entertainment</h4>
+                                            <span>900 Quiz</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <a href='#'>
-                                        <div className='card_box'>
 
-                                            <img src={require('../assets/images/science.jpg')} alt='quiz' />
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/tech.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>Technology</h4>
+                                            <span>1200 Quiz</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <a href='#'>
-                                        <div className='card_box'>
 
-                                            <img src={require('../assets/images/history.jpg')} alt='quiz' />
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/lit.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>Literature</h4>
+                                            <span>1100 Quiz</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <div className='col-lg-3 col-md-6 col-6'>
-                                    <a href='#'>
-                                        <div className='card_box'>
 
-                                            <img src={require('../assets/images/gk.jpg')} alt='quiz' />
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/braingame.png')} alt='quiz' />
+                                        <div className='question_count'>
                                             <h4>General Knowledge</h4>
+                                            <span>500 Quiz</span>
                                         </div>
-                                    </a>
+
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/science.png')} alt='quiz' />
+                                        <div className='question_count'>
+                                            <h4>Science</h4>
+                                            <span>1500 Quiz</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div className='col-6'>
+
+                                    <div className='card_box' onClick={() => setCat(true)}>
+
+                                        <img src={require('../assets/images/cat/news.png')} alt='quiz' />
+                                        <div className='question_count'>
+                                            <h4>News</h4>
+                                            <span>1345 Quiz</span>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                             <div className='play_now'>
-                                <Link to={"/quiz"} className='shine' >Play Now</Link>
+                                <a href='javascript:void(0);' onClick={playBtn} className='shine' >Play Now</a>
+                            </div>
+                            <div className='inner_banner_section mt-3'>
+                                <img src={require('../assets/images/facts.jpg')} alt='banner' />
                             </div>
                         </div>
                     </div>

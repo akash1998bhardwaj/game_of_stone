@@ -12,7 +12,7 @@ export default function Header() {
                     <div className='col-6'>
                         <div className='logo-section'>
                             <Link to={"/leaderboard"} className='shine'>
-                                <img src={require('../assets/images/game-logo.png')} alt='logo' />
+                                <img src={require('../assets/images/logo.png')} alt='logo' />
                             </Link>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ export default function Header() {
                         <ul className='menu_right_section'>
 
                             <li><button onClick={()=>navigate('/profile-theme')}><img src={require('../assets/images/profile.png')} /></button></li>
-                            <li><button><img src={require('../assets/images/coin.png')} /></button></li>
+                            <li><button onClick={()=>navigate('/coins')}><img src={require('../assets/images/coin.png')} /></button></li>
                             <li><button><img src={require('../assets/images/setting.png')} /></button></li>
                             <li><button><img src={require('../assets/images/menu.png')} /></button></li>
                         </ul>

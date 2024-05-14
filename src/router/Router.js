@@ -18,6 +18,7 @@ import Quiz4 from '../Quiz/Quiz4';
 import Result from '../Quiz/Result';
 import HowToPlay from '../home/HowToPlay';
 import Help from '../home/Help';
+import Coins from '../home/Coins';
 
 export default function Router() {
     const [loggedIn, setIsLoggedIn] = useState(false);
@@ -43,6 +44,7 @@ export default function Router() {
                 <Route path="/leaderboard" element={<Leaderboard />} />
                 <Route path="/winner" element={<Winner />} />
                 <Route path="/profile-theme" element={<Aviater />} />
+                <Route path="/coins" element={<Coins />} />
             </Routes>
 
         </>
