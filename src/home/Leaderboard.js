@@ -1,29 +1,48 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../component/Header'
 import { Link, useNavigate } from 'react-router-dom'
 import audioFile from '../assets/images/Game-Checkpoint-Sound.mp3';
 import ReactAudioPlayer from 'react-audio-player';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 export default function Leaderboard() {
 
     const audioRef = useRef(null);
 
+    const [profile, setProfile] = useState(undefined)
+
     const navigate = useNavigate()
+    useEffect(() => {
+        let img = localStorage.getItem('user');
+        console.log('user img', img)
+        setProfile(img)
+    }, [])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+    }, [])
+
 
     const togglePlay = async () => {
         if (audioRef.current) {
-          if (audioRef.current.audioEl.current.paused) {
-            try {
-              await audioRef.current.audioEl.current.play();
-              navigate('/quiz'); // Navigate to the quiz page when the audio starts playing
-            } catch (error) {
-              console.error('Audio playback failed:', error);
+            if (audioRef.current.audioEl.current.paused) {
+                try {
+                    await audioRef.current.audioEl.current.play();
+                    navigate('/quiz'); // Navigate to the quiz page when the audio starts playing
+                } catch (error) {
+                    console.error('Audio playback failed:', error);
+                }
+            } else {
+                audioRef.current.audioEl.current.pause();
             }
-          } else {
-            audioRef.current.audioEl.current.pause();
-          }
         }
-      };
+    };
 
     return (
         <div className='dashboard_screen'>
@@ -36,9 +55,9 @@ export default function Leaderboard() {
                             <h6>Hello !</h6>
                             <h5>Akash Bhardwaj</h5>
                         </div>
-                        <div className='user_profile_box' onClick={()=>navigate('/profile-theme')}>
-                            <img src={require('../assets/images/avatars/2.png')} />
-                            <label><img src={require('../assets/images/pencil.png')} /></label>
+                        <div className='total_earned_box'>
+                            <h5>Total stone earned</h5>
+                            <span>1900</span>
                         </div>
                     </div>
                     <div className='leader_board_header'>
@@ -59,122 +78,235 @@ export default function Leaderboard() {
                                 <span>300</span>
                             </li>
                         </ul>
+                        <div className='divider_line' />
+                        <div className='row m-0'>
+                            <div className='col-4'><div className='lead_card'><h5>Leaderboard</h5></div></div>
+                            <div className='col-4'><div className='lead_card'><h5>My Scores</h5></div></div>
+                            <div className='col-4'><div className='lead_card'><h5><span>Buy Coins</span></h5></div></div>
+                        </div>
+                    </div>
+                    <div className='quize_fomate_two'>
+                        <Swiper
+                            slidesPerView={1.8}
+                            spaceBetween={10}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 5,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className='card_quiz_b card_quiz_b_one'>
+                                    <h4>Quiz Formats</h4>
+                                    <p>Multiple-Choice Questions,
+                                        Fill-In-The-Blanks, Open-Ended Questions,
+                                        True or False Maze, Picture Quiz..</p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='card_quiz_b card_quiz_b_two'>
+                                    <h4>Quiz Types</h4>
+                                    <p>20/20 Quiz, Oneday Quiz, Weekend Quiz,
+                                        Game-Based Quizzes, 50/50 Quiz, One “O” One,
+                                        Power Score...
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+
+
                     </div>
                     <div className='cat_slide_box'>
-                        <div className='cat_box_'>
-                            <Link to='/leaderboard'>
-                                <div className='card_box'>
+                        <div className='category_section'>
+                            <Swiper
+                                slidesPerView={1.8}
+                                spaceBetween={5}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+                                    768: {
+                                        slidesPerView: 4,
+                                        spaceBetween: 10,
+                                    },
+                                    1024: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+                                }}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/sports.png')} />
+                                            </div>
+                                            <h5>Sports</h5>
+                                            <p>7 Stages<br />
+                                                689 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <div className='progres_bar_inner' style={{ width: '45%' }}>
 
-                                    <img src={require('../assets/images/cat/games.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Sports</h4>
-                                        <span>200 Quiz</span>
+                                                </div>
+                                                <span>45%</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                        <div className='cat_box_'>
-                            <Link to='/dashboard'>
-                                <div className='card_box'>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/education.png')} />
+                                            </div>
+                                            <h5>Educational</h5>
+                                            <p>4 Stages<br />
+                                                389 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                {/* <div className='progres_bar_inner'>
+                                                       
+                                                    </div>
+                                                     <span>40%</span> */}
+                                                <button>Lte's Play</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/gk.png')} />
+                                            </div>
+                                            <h5>GK</h5>
+                                            <p>8 Stages<br />
+                                                789 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <div className='progres_bar_inner' style={{ width: '60%' }}>
 
-                                    <img src={require('../assets/images/cat/edu.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Educational</h4>
-                                        <span>800 Quiz</span>
+                                                </div>
+                                                <span>60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/ent.png')} />
+                                            </div>
+                                            <h5>Entertainment</h5>
+                                            <p>5 Stages<br />
+                                                546 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <button>Lte's Play</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/tech.png')} />
+                                            </div>
+                                            <h5>Technnology</h5>
+                                            <p>3 Stages<br />
+                                                345 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <button>Lte's Play</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/science.png')} />
+                                            </div>
+                                            <h5>Science</h5>
+                                            <p>9 Stages<br />
+                                                990 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <div className='progres_bar_inner' style={{ width: '70%' }}>
+
+                                                </div>
+                                                <span>70%</span>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                </div>
-                            </Link>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/sports.png')} />
+                                            </div>
+                                            <h5>News</h5>
+                                            <p>7 Stages<br />
+                                                689 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                <div className='progres_bar_inner' style={{ width: '45%' }}>
 
-                                    <img src={require('../assets/images/cat/ent.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Entertainment</h4>
-                                        <span>900 Quiz</span>
+                                                </div>
+                                                <span>45%</span>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
-
-                                    <img src={require('../assets/images/cat/tech.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Technology</h4>
-                                        <span>1200 Quiz</span>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='p-0'>
+                                        <div className='cat_card_box'>
+                                            <div className='img_icon_with_cat'>
+                                                <img src={require('../assets/images/education.png')} />
+                                            </div>
+                                            <h5>Literature</h5>
+                                            <p>4 Stages<br />
+                                                389 Questions</p>
+                                            <div className='progre_bar_cat'>
+                                                {/* <div className='progres_bar_inner'>
+                                                       
+                                                    </div>
+                                                     <span>40%</span> */}
+                                                <button>Lte's Play</button>
+                                            </div>
+                                        </div>
                                     </div>
+                                </SwiperSlide>
 
-                                </div>
-                            </a>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
 
-                                    <img src={require('../assets/images/cat/lit.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Literature</h4>
-                                        <span>1100 Quiz</span>
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
-
-                                    <img src={require('../assets/images/cat/braingame.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>GK</h4>
-                                        <span>500 Quiz</span>
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
-
-                                    <img src={require('../assets/images/cat/science.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>Science</h4>
-                                        <span>1500 Quiz</span>
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div className='cat_box_'>
-                            <a href='#'>
-                                <div className='card_box'>
-
-                                    <img src={require('../assets/images/cat/news.png')} alt='quiz' />
-                                    <div className='question_count'>
-                                        <h4>News</h4>
-                                        <span>1345 Quiz</span>
-                                    </div>
-
-                                </div>
-                            </a>
+                            </Swiper>
                         </div>
                     </div>
 
                     <div className='category-section category_section_1'>
                         <div className='play_now'>
-                            <Link to="/quiz" className='shine' >Play Now</Link>
+                            <Link to="/quiz" className='btn-hover color-1' >Play Now</Link>
 
                             {/* <ReactAudioPlayer
                                 src={audioFile}
                                 ref={audioRef}
                                 controls
                             /> */}
+                        </div>
+
+                        <div className='inner_banner_section'>
+                            <img src={require('../assets/images/facts.jpg')} alt='banner' />
                         </div>
 
                         <div className='container-fluid'>
@@ -238,9 +370,7 @@ export default function Leaderboard() {
 
                         </div>
                     </div>
-                    <div className='inner_banner_section'>
-                        <img src={require('../assets/images/facts.jpg')} alt='banner' />
-                    </div>
+
                 </div>
             </div>
         </div>

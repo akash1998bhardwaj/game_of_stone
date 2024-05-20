@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Header from '../component/Header'
 import { Link } from 'react-router-dom'
 
@@ -10,12 +10,19 @@ import confetti from 'canvas-confetti';
 export default function Aviater() {
     const audioRef = useRef(null);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+    }, [])
+
     const fire = (particleRatio, opts) => {
         confetti({
             ...opts,
             particleCount: Math.floor(200 * particleRatio),
         });
     };
+
+
 
     const confettiExplosion = (origin) => {
         fire(0.25, { spread: 26, startVelocity: 55, origin });
@@ -26,11 +33,19 @@ export default function Aviater() {
     };
 
     const togglePlay = (event) => {
+        const buttonElement = event.target;
+        const nextSibling = buttonElement;
+
+        if (nextSibling && nextSibling.tagName === 'IMG') {
+            const imgSrc = nextSibling.getAttribute('src');
+            console.log('Image URL:', imgSrc);
+            localStorage.setItem('user', imgSrc)
+        }
         localStorage.setItem('imageClicked', 'true');
 
         const rect = event.target.getBoundingClientRect();
 
-        console.log('rect',rect)
+        console.log('rect', rect)
         const center = {
             x: rect.left + rect.width / 2,
             y: rect.top + rect.height / 2,
@@ -43,12 +58,15 @@ export default function Aviater() {
         if (audioRef.current) {
             if (audioRef.current.audioEl.current.paused) {
                 audioRef.current.audioEl.current.play();
-                
+
             } else {
                 audioRef.current.audioEl.current.pause();
             }
         }
         confettiExplosion(origin);
+        setTimeout(() => {
+            window.location.reload()
+        }, 1000)
 
 
     };
@@ -76,7 +94,7 @@ export default function Aviater() {
                         <div className='row'>
                             <div className='col-lg-4 col-4'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/1.png').default} />
+                                    <img src={require('../assets/images/avatars/1.png')} />
                                 </div>
                             </div>
                             <div className='col-lg-4 col-4'>

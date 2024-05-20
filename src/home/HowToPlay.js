@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../component/Header'
 
 export default function HowToPlay() {
+
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+		
+	}, [])
+
     return (
         <div className='content_page'>
             <Header />

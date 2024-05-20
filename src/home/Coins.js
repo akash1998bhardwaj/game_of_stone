@@ -5,7 +5,12 @@ import { Link, useNavigate, useNavigation } from 'react-router-dom';
 
 export default function Coins() {
 
+    useEffect(() => {
+		window.scrollTo(0, 0);
+		
+	}, [])
 
+    
     return (
         <>
 
@@ -22,9 +27,9 @@ export default function Coins() {
                         <div className='container-fluid'>
                             <div className='row'>
 
-                                <div className='col-12'>
+                                <div className='col-6'>
                                     <Link to='/leaderboard'>
-                                        <div className='card_box'>
+                                        <div className='card_box coin_box'>
 
                                             <img src={require('../assets/images/stone.png')} alt='quiz' />
                                             <div className='question_count'>
@@ -34,9 +39,9 @@ export default function Coins() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-12'>
-                                    <Link to='/dashboard'>
-                                        <div className='card_box'>
+                                <div className='col-6'>
+                                    <Link to='/winner'>
+                                        <div className='card_box coin_box'>
 
                                             <img src={require('../assets/images/stone.png')} alt='quiz' />
                                             <div className='question_count'>
@@ -46,9 +51,9 @@ export default function Coins() {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className='col-12'>
+                                <div className='col-6'>
                                     <a href='#'>
-                                        <div className='card_box'>
+                                        <div className='card_box coin_box'>
 
                                             <img src={require('../assets/images/stone.png')} alt='quiz' />
                                             <div className='question_count'>
@@ -58,9 +63,33 @@ export default function Coins() {
                                         </div>
                                     </a>
                                 </div>
-                                <div className='col-12'>
+                                <div className='col-6'>
                                     <a href='#'>
-                                        <div className='card_box'>
+                                        <div className='card_box coin_box'>
+
+                                            <img src={require('../assets/images/stone.png')} alt='quiz' />
+                                            <div className='question_count'>
+                                                <h4>1000 Stons</h4>
+                                                <span>100$</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className='col-6'>
+                                    <a href='#'>
+                                        <div className='card_box coin_box'>
+
+                                            <img src={require('../assets/images/stone.png')} alt='quiz' />
+                                            <div className='question_count'>
+                                                <h4>1000 Stons</h4>
+                                                <span>100$</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className='col-6'>
+                                    <a href='#'>
+                                        <div className='card_box coin_box'>
 
                                             <img src={require('../assets/images/stone.png')} alt='quiz' />
                                             <div className='question_count'>
@@ -73,8 +102,11 @@ export default function Coins() {
 
                             </div>
                             <div className='play_now'>
-                                <Link to={"#"} className='shine' >Buy Now</Link>
+                                <Link to={"#"} className='btn-hover color-2' >Buy Now</Link>
                             </div>
+                        </div>
+                        <div className='inner_banner_section mt-3'>
+                            <img src={require('../assets/images/facts.jpg')} alt='banner' />
                         </div>
                     </div>
                 </div>

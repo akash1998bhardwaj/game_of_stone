@@ -7,9 +7,9 @@ export default function Splash() {
     const [per, setPer] = useState(16);
     const [loading, setLoading] = useState(null);
     useEffect(() => {
-		window.scrollTo(0, 0);
-		
-	}, [])
+        window.scrollTo(0, 0);
+
+    }, [])
     useEffect(() => {
         setTimeout(() => {
             naviogate('/login')
@@ -32,20 +32,26 @@ export default function Splash() {
     return (
         <div className='splash-screen'>
             <div className='logo-section'>
-                <img src={require('../assets/images/logo.png')} alt='logo' />
+                <h3>GAME OF<br /> <span>STONS</span></h3>
             </div>
             <div className='loading_section'>
                 <div className="loading">
-                    <div className="text">Loading...</div>
+
+
 
                     <div className='progress-bar-main'>
                         <div className="progress-bar">
-                            <label className="percent">{count}%</label>
-                            <div className="progress" style={{ width: `${per}px` }}></div>
+
+                            <div className="progress" style={{ width: `${count}%` }}></div>
                         </div>
+                    </div>
+                    <div className='progress_text'>
+                        <div className="text">Loading...</div>
+                        <label className="percent">{count}%</label>
                     </div>
                 </div>
             </div>
+            <h4 className='play_and_earn'>Play and earn!</h4>
         </div>
     )
 }

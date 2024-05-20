@@ -7,6 +7,12 @@ export default function Home() {
 
     const [slide, setSlide] = useState(false);
 
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+		
+	}, [])
+
     useEffect(() => {
         setTimeout(() => {
             setSlide(true)

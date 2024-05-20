@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../component/Header'
 
 export default function Winner() {
+
+
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+		
+	}, [])
+    
     return (
-        <div className='dashboard_screen'>
+        <div className='dashboard_screen dashboard_screen_winner'>
             <Header />
             <div className='dashboard_section'>
                 <div className='dash_board'>
@@ -21,7 +29,7 @@ export default function Winner() {
                             <div>
                                 <p>Akash Bhardwaj</p>
                                 <span>112144</span>
-                                <h5>(2)</h5>
+                                {/* <h5>(2)</h5> */}
                             </div>
                         </div>
                         <div className='div_secont lavel_user'>
@@ -34,7 +42,7 @@ export default function Winner() {
                             <div>
                                 <p>Abhishek Goldy</p>
                                 <span>200000</span>
-                                <h2>(1)</h2>
+                                {/* <h2>(1)</h2> */}
                             </div>
                         </div>
                         <div className='div_first lavel_user'>
@@ -45,7 +53,7 @@ export default function Winner() {
                             <div>
                                 <p>Sandeep sagar</p>
                                 <span>40000</span>
-                                <h5>(3)</h5>
+                                {/* <h5>(3)</h5> */}
                             </div>
                         </div>
                     </div>

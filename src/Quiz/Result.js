@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../component/Header'
 import { Link } from 'react-router-dom'
 
 export default function Result() {
+
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+		
+	}, [])
+
     return (
         <div className='result_page'>
             <Header />
@@ -13,21 +20,24 @@ export default function Result() {
                 <div className='leader_board_header'>
                     <ul>
                         <li>
+                            <img src={require('../assets/images/rank.png')} />
                             <p>Rank</p>
                             <span>20</span>
                         </li>
                         <li>
-                            <p>Coins</p>
+                            <img src={require('../assets/images/stones.png')} />
+                            <p>Stone</p>
                             <span>1200</span>
                         </li>
                         <li>
+                            <img src={require('../assets/images/world.png')} />
                             <p>Score</p>
                             <span>300</span>
                         </li>
                     </ul>
                 </div>
                 <div className='play_now'>
-                    <Link to={"/quiz"} className='shine' >Play Again</Link>
+                    <Link to={"/quiz"} className='btn-hover color-1' >Play Again</Link>
                 </div>
             </div>
         </div>
