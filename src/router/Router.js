@@ -33,10 +33,10 @@ export default function Router() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/cat" element={<Cat />} />
                 <Route path="/quiz" element={<Quiz />} />
-                <Route path="/quiz1" element={<Quiz1 />} />
+                {/* <Route path="/quiz1" element={<Quiz1 />} />
                 <Route path="/quiz2" element={<Quiz2 />} />
                 <Route path="/quiz3" element={<Quiz3 />} />
-                <Route path="/quiz4" element={<Quiz4 />} />
+                <Route path="/quiz4" element={<Quiz4 />} /> */}
                 <Route path="/result" element={<Result />} />
                 <Route path="/how-to-play" element={<HowToPlay />} />
                 <Route path="/help" element={<Help />} />

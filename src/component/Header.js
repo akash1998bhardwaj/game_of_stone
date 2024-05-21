@@ -22,18 +22,7 @@ export default function Header() {
         setProfile(img)
     }, [])
 
-    useEffect(() => {
-        if (toggle) {
-            document.querySelector('.App').classList.add('active');
-        } else {
-            document.querySelector('.App').classList.remove('active');
-        }
-
-
-        return () => {
-            document.querySelector('.App').classList.remove('active');
-        };
-    }, [toggle]);
+    
 
 
     return (
@@ -42,9 +31,9 @@ export default function Header() {
                 <div className='row'>
                     <div className='col-2'>
                         <div className='logo-section'>
-                            <Link to={"/leaderboard"}>
+                            <Link to={"/profile-theme"}>
                                 <div className='header_user_box'>
-                                    <img src={require('../assets/images/user_img.png')} alt='logo' />
+                                    <img src={profile} alt='logo' />
                                 </div>
                             </Link>
                         </div>

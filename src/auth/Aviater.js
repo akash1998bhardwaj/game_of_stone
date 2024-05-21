@@ -92,157 +92,147 @@ export default function Aviater() {
 
                     <div className='conatiner-fluid'>
                         <div className='row'>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/1.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/2.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/3.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/4.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/5.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/6.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/7.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/8.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/9.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/10.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/11.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/12.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/13.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/14.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/15.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/16.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/1.png')} />
+                                    <img src={require('../assets/images/avatars/17.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/2.png')} />
+                                    <img src={require('../assets/images/avatars/18.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/3.png')} />
+                                    <img src={require('../assets/images/avatars/19.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/4.png')} />
+                                    <img src={require('../assets/images/avatars/20.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/5.png')} />
+                                    <img src={require('../assets/images/avatars/21.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
+                                <div className='picture_card' onClick={togglePlay}>
+                                    <img src={require('../assets/images/avatars/22.png')} />
+                                </div>
+                            </div>
+                            <div className='col-lg-4 col-3'>
+                                <div className='picture_card' onClick={togglePlay}>
+                                    <img src={require('../assets/images/avatars/23.png')} />
+                                </div>
+                            </div>
+                            <div className='col-lg-4 col-3'>
+                                <div className='picture_card' onClick={togglePlay}>
+                                    <img src={require('../assets/images/avatars/24.png')} />
+                                </div>
+                            </div>
+                            <div className='col-lg-4 col-3'>
+                                <div className='picture_card' onClick={togglePlay}>
+                                    <img src={require('../assets/images/avatars/25.png')} />
+                                </div>
+                            </div>
+                            <div className='col-lg-4 col-3'>
+                                <div className='picture_card' onClick={togglePlay}>
+                                    <img src={require('../assets/images/avatars/26.png')} />
+                                </div>
+                            </div>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/6.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/7.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/8.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
+                            <div className='col-lg-4 col-3'>
                                 <div className='picture_card' onClick={togglePlay}>
                                     <img src={require('../assets/images/avatars/9.png')} />
                                 </div>
                             </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/10.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/11.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/12.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/13.png')} />
-                                </div>
-                            </div>
-                            <div className='col-lg-4 col-4'>
-                                <div className='picture_card' onClick={togglePlay}>
-                                    <img src={require('../assets/images/avatars/14.png')} />
-                                </div>
-                            </div>
-
+                           
 
                         </div>
                     </div>

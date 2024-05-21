@@ -1,15 +1,34 @@
 import React, { useEffect } from 'react'
 import Header from '../component/Header'
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
 
 export default function Winner() {
 
 
-    
+
     useEffect(() => {
-		window.scrollTo(0, 0);
-		
-	}, [])
-    
+        window.scrollTo(0, 0);
+
+    }, [])
+
+    useGSAP(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from('.scroll_box_right', {
+            opacity: 0,
+            x: 100,
+            duration: 1,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: '.scroll_box_right',
+                start: 'top 90%', // Start the animation when the top of the element hits 80% of the viewport height
+                toggleActions: 'play none none none',
+            },
+        });
+
+    })
+
     return (
         <div className='dashboard_screen dashboard_screen_winner'>
             <Header />
@@ -58,9 +77,10 @@ export default function Winner() {
                         </div>
                     </div>
                     <div className='user_list'>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                4
+                                <p>4</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -76,9 +96,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                5
+                                <p>5</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -94,9 +115,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                6
+                                <p> 6</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -112,9 +134,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                7
+                                <p>7</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -130,9 +153,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                8
+                                <p>8</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -148,9 +172,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                9
+                                <p>9</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -166,9 +191,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                10
+                                <p>10</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -184,9 +210,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                4
+                                <p>4</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -202,9 +229,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                5
+                                <p>5</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -220,9 +248,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                6
+                                <p>6</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -238,9 +267,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                7
+                                <p>7</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -256,9 +286,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                8
+                                <p>8</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -274,9 +305,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                9
+                                <p>9</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -292,9 +324,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                10
+                                <p>10</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -310,9 +343,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                4
+                                <p>4</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -328,9 +362,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                5
+                                <p>5</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -346,9 +381,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                6
+                                <p>6</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -364,9 +400,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                7
+                                <p>7</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -382,9 +419,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                8
+                                <p>8</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -400,9 +438,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                9
+                                <p>9</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -418,9 +457,10 @@ export default function Winner() {
                                 <span>22345</span>
                             </div>
                         </div>
-                        <div className='list_item_box'>
+                        <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                10
+                                <p>10</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -441,7 +481,8 @@ export default function Winner() {
                     <div className='user_list fiexd_user_profile'>
                         <div className='list_item_box'>
                             <div className='number_level'>
-                                20
+                                <p>20</p>
+                                <span>Stage</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>

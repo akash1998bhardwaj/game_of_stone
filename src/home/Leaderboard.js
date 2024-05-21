@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Footer from '../component/Footer';
 
 export default function Leaderboard() {
 
@@ -52,7 +53,7 @@ export default function Leaderboard() {
                 <div className='leader_board'>
                     <div className='user_login_detail'>
                         <div className='user_profile_text'>
-                            <h6>Hello !</h6>
+                            <h6>Hello ! <img src={require('../assets/images/edit.png')} /></h6>
                             <h5>Akash Bhardwaj</h5>
                         </div>
                         <div className='total_earned_box'>
@@ -82,12 +83,17 @@ export default function Leaderboard() {
                         <div className='row m-0'>
                             <div className='col-4'><div className='lead_card'><h5>Leaderboard</h5></div></div>
                             <div className='col-4'><div className='lead_card'><h5>My Scores</h5></div></div>
-                            <div className='col-4'><div className='lead_card'><h5><span>Buy Coins</span></h5></div></div>
+                            <div className='col-4' onClick={()=>navigate('/coins')}><div className='lead_card'><h5><span className='shine_1'>Buy Coins</span></h5></div></div>
                         </div>
+                    </div>
+                    <div className='three-button-section'>
+                        <Link to={"#"}><img src={require('../assets/images/prize.png')} alt='quiz' /> Prizes</Link>
+                        <Link to={"/winner"}><img src={require('../assets/images/winner.png')} alt='quiz' /> Winner</Link>
+                        <Link to={"/cat"}><img src={require('../assets/images/cat.png')} alt='quiz' /> Category</Link>
                     </div>
                     <div className='quize_fomate_two'>
                         <Swiper
-                            slidesPerView={1.8}
+                            slidesPerView={2}
                             spaceBetween={10}
                             breakpoints={{
                                 640: {
@@ -108,18 +114,18 @@ export default function Leaderboard() {
                             <SwiperSlide>
                                 <div className='card_quiz_b card_quiz_b_one'>
                                     <h4>Quiz Formats</h4>
-                                    <p>Multiple-Choice Questions,
+                                    {/* <p>Multiple-Choice Questions,
                                         Fill-In-The-Blanks, Open-Ended Questions,
-                                        True or False Maze, Picture Quiz..</p>
+                                        True or False Maze, Picture Quiz..</p> */}
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className='card_quiz_b card_quiz_b_two'>
                                     <h4>Quiz Types</h4>
-                                    <p>20/20 Quiz, Oneday Quiz, Weekend Quiz,
+                                    {/* <p>20/20 Quiz, Oneday Quiz, Weekend Quiz,
                                         Game-Based Quizzes, 50/50 Quiz, One “O” One,
                                         Power Score...
-                                    </p>
+                                    </p> */}
                                 </div>
                             </SwiperSlide>
                         </Swiper>
@@ -127,6 +133,10 @@ export default function Leaderboard() {
 
                     </div>
                     <div className='cat_slide_box'>
+                        <div className='header_box'>
+                            <h4 className='heading-5'>Category</h4>
+                            <Link to={"/cat"}>View All</Link>
+                        </div>
                         <div className='category_section'>
                             <Swiper
                                 slidesPerView={1.8}
@@ -179,7 +189,7 @@ export default function Leaderboard() {
                                                        
                                                     </div>
                                                      <span>40%</span> */}
-                                                <button>Lte's Play</button>
+                                                <button>Let's Play</button>
                                             </div>
                                         </div>
                                     </div>
@@ -212,7 +222,7 @@ export default function Leaderboard() {
                                             <p>5 Stages<br />
                                                 546 Questions</p>
                                             <div className='progre_bar_cat'>
-                                                <button>Lte's Play</button>
+                                                <button>Let's Play</button>
                                             </div>
                                         </div>
                                     </div>
@@ -227,7 +237,7 @@ export default function Leaderboard() {
                                             <p>3 Stages<br />
                                                 345 Questions</p>
                                             <div className='progre_bar_cat'>
-                                                <button>Lte's Play</button>
+                                                <button>Let's Play</button>
                                             </div>
                                         </div>
                                     </div>
@@ -255,7 +265,7 @@ export default function Leaderboard() {
                                     <div className='p-0'>
                                         <div className='cat_card_box'>
                                             <div className='img_icon_with_cat'>
-                                                <img src={require('../assets/images/sports.png')} />
+                                                <img src={require('../assets/images/news.png')} />
                                             </div>
                                             <h5>News</h5>
                                             <p>7 Stages<br />
@@ -273,7 +283,7 @@ export default function Leaderboard() {
                                     <div className='p-0'>
                                         <div className='cat_card_box'>
                                             <div className='img_icon_with_cat'>
-                                                <img src={require('../assets/images/education.png')} />
+                                                <img src={require('../assets/images/lit.png')} />
                                             </div>
                                             <h5>Literature</h5>
                                             <p>4 Stages<br />
@@ -283,7 +293,7 @@ export default function Leaderboard() {
                                                        
                                                     </div>
                                                      <span>40%</span> */}
-                                                <button>Lte's Play</button>
+                                                <button>Let's Play</button>
                                             </div>
                                         </div>
                                     </div>
@@ -309,7 +319,7 @@ export default function Leaderboard() {
                             <img src={require('../assets/images/facts.jpg')} alt='banner' />
                         </div>
 
-                        <div className='container-fluid'>
+                        {/* <div className='container-fluid mt-3'>
                             <div className='row'>
 
                                 <div className='col-lg-3 col-md-6 col-4'>
@@ -368,11 +378,12 @@ export default function Leaderboard() {
                                 </div>
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
