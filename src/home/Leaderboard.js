@@ -83,7 +83,7 @@ export default function Leaderboard() {
                         <div className='row m-0'>
                             <div className='col-4'><div className='lead_card'><h5>Leaderboard</h5></div></div>
                             <div className='col-4'><div className='lead_card'><h5>My Scores</h5></div></div>
-                            <div className='col-4' onClick={()=>navigate('/coins')}><div className='lead_card'><h5><span className='shine_1'>Buy Coins</span></h5></div></div>
+                            <div className='col-4' onClick={() => navigate('/coins')}><div className='lead_card'><h5><span className='shine_1'>Buy Coins</span></h5></div></div>
                         </div>
                     </div>
                     <div className='three-button-section'>
@@ -111,7 +111,7 @@ export default function Leaderboard() {
                             }}
                             className="mySwiper"
                         >
-                            <SwiperSlide>
+                            <SwiperSlide onClick={() => navigate('/quize-formats')}>
                                 <div className='card_quiz_b card_quiz_b_one'>
                                     <h4>Quiz Formats</h4>
                                     {/* <p>Multiple-Choice Questions,
@@ -119,7 +119,7 @@ export default function Leaderboard() {
                                         True or False Maze, Picture Quiz..</p> */}
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
+                            <SwiperSlide onClick={() => navigate('/quiz-types')}>
                                 <div className='card_quiz_b card_quiz_b_two'>
                                     <h4>Quiz Types</h4>
                                     {/* <p>20/20 Quiz, Oneday Quiz, Weekend Quiz,

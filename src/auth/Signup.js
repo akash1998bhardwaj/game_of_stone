@@ -13,7 +13,7 @@ export default function Signup() {
     return (
         <div className='auth-section'>
             <div className='auth-login-form'>
-                <h3>GAME OF<br /> <span>STONS</span></h3>
+                <h3>GAME OF<br /> <span>STONES</span></h3>
                 <h5>Welcome Back</h5>
                 <p className='paragraph'>Signin to continue with Game of Stone</p>
                 <AvForm>

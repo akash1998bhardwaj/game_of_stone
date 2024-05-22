@@ -22,7 +22,7 @@ export default function Header() {
         setProfile(img)
     }, [])
 
-    
+
 
 
     return (
@@ -33,14 +33,14 @@ export default function Header() {
                         <div className='logo-section'>
                             <Link to={"/profile-theme"}>
                                 <div className='header_user_box'>
-                                    <img src={profile} alt='logo' />
+                                    <img src={profile ? profile : require('../assets/images/user_img.png')} />
                                 </div>
                             </Link>
                         </div>
                     </div>
                     <div className='col-8'>
-                        <div className='logo-name-middle'>
-                            <h3>game of STONS</h3>
+                        <div className='logo-name-middle' onClick={() => navigate('/leaderboard')}>
+                            <h3>game of STONES</h3>
                         </div>
                     </div>
                     <div className='col-2'>
@@ -75,10 +75,12 @@ export default function Header() {
                     <h4>Akash Bhardwaj</h4>
                 </div>
                 <ul className='menu_list'>
-                    <li><Link>Leaderboard</Link></li>
-                    <li><Link>Coins</Link></li>
-                    <li><Link>Quiz</Link></li>
-                    <li><Link>Category</Link></li>
+                    <li><Link to={"/leaderboard"}>Leaderboard</Link></li>
+                    <li><Link to={"/coins"}>Coins</Link></li>
+                    <li><Link to={"/quiz"}>Quiz</Link></li>
+                    <li><Link to={"/quize-formats"}>Quiz Formats</Link></li>
+                    <li><Link to={"/quiz-types"}>Quiz Types</Link></li>
+                    <li><Link to={"/cat"}>Category</Link></li>
                     <li><Link>Setting</Link></li>
 
                 </ul>

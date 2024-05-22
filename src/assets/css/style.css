@@ -1391,6 +1391,40 @@ p {
     opacity: 0;
 }
 
+.question_section {
+    position: relative;
+}
+
+.question_section .skip_circle {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 2;
+}
+
+.circle {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+.skip_circle .second_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
 .question_section h3 {
     font-size: 30px;
     margin-bottom: 0;
@@ -2112,6 +2146,7 @@ p {
         flex-direction: column;
         align-items: end;
         height: auto;
+        padding-top: 20px;
     }
 
     .profile_picture {
@@ -2244,9 +2279,10 @@ p {
 
     .winning_page {
         background-color: #fff;
-        height: 100vh;
+        /* height: 100vh; */
+        padding-bottom: 50px;
 
-        padding: 50px 10px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2273,7 +2309,7 @@ p {
 
     .winning_page .leader_board_header {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .winning_page h2 {
@@ -2284,14 +2320,15 @@ p {
     }
 
     .winning_page h5 {
-        font-size: 20px;
+        font-size: 16px;
         font-family: var(--Swiss721MediumBT);
-        color: #000;
+        color: #fff;
+        margin-bottom: 0;
     }
 
     .winning_page .play_now {
         width: 100%;
-        margin-top: 40px;
+
 
     }
 
@@ -2428,7 +2465,7 @@ p {
         opacity: 0;
         width: 90%;
         height: 100vh;
-        background-color: #fff;
+        background-color: #000;
         z-index: 111;
         transition: 0.6s;
         padding: 20px 40px;
@@ -2502,7 +2539,7 @@ p {
     }
 
     .toogle_menu_slider .profile_mm .profile_img_mm img {
-        width: 70%;
+        width: 80%;
     }
 
     .toogle_menu_slider .profile_mm .choose_picture_img img {
@@ -2511,6 +2548,7 @@ p {
 
     .toogle_menu_slider .profile_mm h4 {
         font-size: 18px;
+        color: #fff;
     }
 
     .toogle_menu_slider .menu_list {
@@ -2527,8 +2565,8 @@ p {
         background-color: #e4e7e9;
         color: #000;
         margin-bottom: 15px;
-        border-radius: 5px;
-        border-left: 4px solid var(--bg-color10);
+        border-radius: 0;
+        border-left: 8px solid var(--bg-color13);
     }
 
     .loader_section {
@@ -2744,7 +2782,7 @@ p {
 
     ._leader_board_header .lead_card {
         border: 1px solid var(--bg-color13);
-        padding: 10px 20px;
+        padding: 10px 10px;
         border-radius: 50px;
     }
 
@@ -2802,23 +2840,196 @@ p {
         }
     }
 
+    .result_page {
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
     .circle_progress_one {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 25px;
     }
 
     .circle_progress {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 120px;
+        width: 140px;
+        position: relative;
     }
+
+    .circle_progress h5 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .CircularProgressbar .CircularProgressbar-text {
+        font-family: var(--BLADRMF);
+    }
+
+    .winning_page .question_section {
+        padding: 50px 10px;
+        color: #fff;
+    }
+
+    .winning_page .question_section h3 {
+        font-size: 40px;
+
+    }
+
+    .total_coins_earn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .total_coins_earn h6 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .total_coins_earn h6 span {
+        background-color: #fff;
+        padding: 4px 10px;
+        color: #000;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .total_coins_earn h6 img {
+        width: 20px;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .answers_board {
+        position: relative;
+        width: 100%;
+        margin-top: 40px;
+        background-color: #00000049;
+        padding: 10px;
+    }
+
+    .answers_board ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    .answers_board ul li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .answers_board ul li p {
+        margin-bottom: 0 !important;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .answers_board ul li h5 {
+        color: #fff !important;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .QuizeFormats_page {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+
+    }
+
+    .QuizeFormats_page_row {
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .padding_box {
+        padding: 8px !important;
+    }
+
+    .cat_card_text {
+        border: 1px solid #fff;
+        padding: 15px !important;
+        border-radius: 10px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-color15);
+        border: 1px solid var(--bg-color13);
+        position: relative;
+        flex-direction: column;
+    }
+
+    .cat_card_text h5 {
+        color: #fff;
+        margin: 0 !important;
+        font-size: 15px !important;
+        text-align: center !important;
+    }
+
+    .cat_card_text img {
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media(max-width:425px) {
     .user_login_detail h5 {
         font-size: 14px;
+    }
+
+    .question_section h3 {
+        font-size: 26px;
+    }
+
+    .question_img {
+        height: 150px;
+    }
+
+    .Quiz_box .question {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .Quiz_box .answer_list button {
+        padding: 7px 10px;
+        margin: 4px 0;
+        font-size: 16px;
+    }
+
+    .question_progress_ {
+        width: 100%;
+        height: 22px;
+    }
+
+    .logo-name-middle h3 {
+        font-size: 22px;
     }
 }
 

@@ -81,12 +81,12 @@ export default function Aviater() {
                 />
             </div>
             <Header />
-            <Link className='cat_title_new cat_title_new_1' to={"/leaderboard"}>
-                <img src={require('../assets/images/left-chevron1.png')} />
-                Select Profile Picture
-            </Link>
-            <div className='profile_picture_setting'>
 
+            <div className='profile_picture_setting'>
+                <Link className='cat_title_new cat_title_new_1' to={"/leaderboard"}>
+                    <img src={require('../assets/images/left-chevron1.png')} />
+                    Select Profile Picture
+                </Link>
 
                 <div className='profile_picture'>
 
@@ -232,7 +232,7 @@ export default function Aviater() {
                                     <img src={require('../assets/images/avatars/9.png')} />
                                 </div>
                             </div>
-                           
+
 
                         </div>
                     </div>

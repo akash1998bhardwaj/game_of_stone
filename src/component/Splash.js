@@ -32,7 +32,7 @@ export default function Splash() {
     return (
         <div className='splash-screen'>
             <div className='logo-section'>
-                <h3>GAME OF<br /> <span>STONS</span></h3>
+                <h3>GAME OF<br /> <span>STONES</span></h3>
             </div>
             <div className='loading_section'>
                 <div className="loading">
