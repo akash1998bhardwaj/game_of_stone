@@ -22,7 +22,7 @@ export default function Login() {
                 <AvForm>
                     <AvField name="mobile" placeholder="Mobile" type="text" />
                     <AvField name="password" placeholder="Password" type="text" />
-                    <button className='btn-hover color-1' onClick={() => navigate('/leaderboard')}>Submit</button>
+                    <button className='btn-hover color-1' onClick={() => navigate('/home')}>Submit</button>
                     <p>Forgot Password</p>
                     <h6>Don’t have an account<Link to={"/signup"}> Signup now</Link></h6>
                 </AvForm>

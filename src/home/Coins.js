@@ -10,6 +10,7 @@ import Footer from '../component/Footer';
 
 export default function Coins() {
 
+    const navigate = useNavigate();
     const [cat, setCat] = useState(false)
     const [selectCat, setSelectCat] = useState(undefined)
     useEffect(() => {
@@ -19,7 +20,7 @@ export default function Coins() {
 
     const playBtn = () => {
         if (cat) {
-            navigator('/quiz')
+            navigate(-1)
         } else {
             toast.error('Please buy coins')
         }
@@ -90,7 +91,7 @@ export default function Coins() {
                     <div className='cat_header_1' >
                         <Link className='cat_title_new' to={"/leaderboard"}>
                             <img src={require('../assets/images/left-chevron1.png')} />
-                            Buy Stons
+                            Buy Questions
                         </Link>
                     </div>
                     <div className='category-section category_section category_section_inner' >
@@ -104,8 +105,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>100 Stons</h5>
-                                            <p className='coins_text'><span>10$</span> <br />8$</p>
+                                            <h5>105 Questions</h5>
+                                            <p className='coins_text'><span>100+5</span><br />10$</p>
 
                                         </div>
                                     </div>
@@ -118,8 +119,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>400 Stons</h5>
-                                            <p className='coins_text'><span>80$</span> <br />50$</p>
+                                            <h5>220 Questions</h5>
+                                            <p className='coins_text'><span>200+20</span> <br />20$</p>
 
                                         </div>
                                     </div>
@@ -132,8 +133,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>100 Stons</h5>
-                                            <p className='coins_text'><span>10$</span> <br />8$</p>
+                                            <h5>550 Questions</h5>
+                                            <p className='coins_text'><span>500+50</span> <br />50$</p>
 
                                         </div>
                                     </div>
@@ -146,8 +147,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>400 Stons</h5>
-                                            <p className='coins_text'><span>100$</span> <br />40$</p>
+                                            <h5>800 Questions</h5>
+                                            <p className='coins_text'><span>800+80</span> <br />80$</p>
 
                                         </div>
                                     </div>
@@ -160,8 +161,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>600 Stons</h5>
-                                            <p className='coins_text'><span>150$</span> <br />100$</p>
+                                            <h5>1100 Questions</h5>
+                                            <p className='coins_text'><span>1000+100</span> <br />100$</p>
 
                                         </div>
                                     </div>
@@ -174,8 +175,8 @@ export default function Coins() {
                                             <div className='img_icon_with_cat'>
                                                 <img src={require('../assets/images/stone.png')} />
                                             </div>
-                                            <h5>350 Stons</h5>
-                                            <p className='coins_text'><span>60$</span> <br />40$</p>
+                                            <h5>1650 Questions</h5>
+                                            <p className='coins_text'><span>1500+150</span> <br />150$</p>
 
                                         </div>
                                     </div>

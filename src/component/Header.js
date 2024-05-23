@@ -39,8 +39,9 @@ export default function Header() {
                         </div>
                     </div>
                     <div className='col-8'>
-                        <div className='logo-name-middle' onClick={() => navigate('/leaderboard')}>
-                            <h3>game of STONES</h3>
+                        <div className='logo-name-middle' onClick={() => navigate('/home')}>
+                            {/* <h3>game of STONES</h3> */}
+                            <img src={require('../assets/images/gameofstone.png')} />
                         </div>
                     </div>
                     <div className='col-2'>

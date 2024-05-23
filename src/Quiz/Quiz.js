@@ -111,20 +111,20 @@ const Quiz = () => {
     }, []);
 
 
-    useEffect(() => {
-        if (skipTiming === 0) {
-            setCurrentStep(currentStep + 1);
-            
-            setSkipTiming(10)
-            if ((currentStep + 1) == steps.length) {
-                dispatch(setUser({ ...user, result: [...answers, skipAns] }));
-                navigate('/result')
-            }
-            return;
-        }
-    }, [skipTiming])
+    // useEffect(() => {
+    //     if (skipTiming === 0) {
+    //         setCurrentStep(currentStep + 1);
 
-    console.log('timer', skipTiming)
+    //         setSkipTiming(10)
+    //         if ((currentStep + 1) == steps.length) {
+    //             dispatch(setUser({ ...user, result: [...answers, skipAns] }));
+    //             navigate('/result')
+    //         }
+    //         return;
+    //     }
+    // }, [skipTiming])
+
+    // console.log('timer', skipTiming)
 
     useEffect(() => {
         if (audioRef.current) {
@@ -191,7 +191,7 @@ const Quiz = () => {
                                         />
                                     </div>
                                     <div className='question_section'>
-                                        <div className='skip_circle'>
+                                        {/* <div className='skip_circle'>
                                             <svg viewBox="0 0 36 36" className="circular-chart">
                                                 <path
                                                     className="circle-bg"
@@ -208,15 +208,44 @@ const Quiz = () => {
                                                 />
                                             </svg>
                                             <span className='second_text'>{skipTiming}s</span>
+                                        </div> */}
+                                        {/* <h3>Sports</h3>
+                                        <h5>Stage 1 <span>(Beginner)</span></h5> */}
+                                        <div className='leader_board_header _leader_board_header_new _leader_board_header_new_quiz'>
+                                            <ul>
+                                                <li>
+                                                    <div className='board_header_t'>
+                                                        <img src={require('../assets/images/stone.png')} />
+
+                                                    </div>
+                                                    <div className='board_content'>
+                                                        <h6>Stones</h6>
+                                                        <p>Today - 100</p>
+                                                        <p>Total - 500</p>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div className='board_header_t'>
+                                                        <img src={require('../assets/images/question.png')} />
+
+                                                    </div>
+                                                    <div className='board_content'>
+                                                        <h6>Questions</h6>
+                                                        <p>Played - 100</p>
+                                                        <p>Remain - 500</p>
+                                                    </div>
+
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <h3>Sports</h3>
-                                        <h5>Stage 1 <span>(Beginner)</span></h5>
-                                        <div className='question_progress'>
+                                        {/* <div className='question_progress'>
                                             <div className='question_progress_'>
                                                 <div className='progress_line' style={{ width: `${((currentStep + 1) * 100) / steps?.length}%` }}></div>
                                             </div>
                                             <h5>{currentStep + 1}/{steps?.length}</h5>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className='left_section'>
                                         <div className='question_box'>

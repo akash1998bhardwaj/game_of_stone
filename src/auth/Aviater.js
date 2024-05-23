@@ -83,7 +83,7 @@ export default function Aviater() {
             <Header />
 
             <div className='profile_picture_setting'>
-                <Link className='cat_title_new cat_title_new_1' to={"/leaderboard"}>
+                <Link className='cat_title_new cat_title_new_1' to={"/home"}>
                     <img src={require('../assets/images/left-chevron1.png')} />
                     Select Profile Picture
                 </Link>

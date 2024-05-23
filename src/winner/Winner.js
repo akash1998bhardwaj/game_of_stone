@@ -34,471 +34,120 @@ export default function Winner() {
             <Header />
             <div className='dashboard_section'>
                 <div className='dash_board'>
-                    <ul className='list_item'>
+                    {/* <ul className='list_item'>
                         <li><button className='active'>All Time</button></li>
                         <li><button>Weekly</button></li>
                         <li><button>24 Hours</button></li>
-                    </ul>
-                    <div className='top_three_win'>
-                        <div className='div_first lavel_user'>
-                            <div className='frame_img_box'>
-                                <img src={require('../assets/images/second.png')} alt='profile-user' className='frame_img' />
-                                <img src={require('../assets/images/avatars/1.png')} className='user_img' alt='profile-user' />
+                    </ul> */}
+                    <div className='heading-leader-page'>
+                        <h4>Winner List <span>(6 Months Contest)</span></h4>
+                        {/* <h5></h5> */}
+                    </div>
+                    <div className='winner-page-section'>
+                        <div className='row winner_user_box'>
+                            <div className='col-4 '>
+                                <div className='winner-user-card'>
+                                    <div className='winner-project'>
+                                        <img src={require('../assets/images/avatars/1.png')} />
+                                    </div>
+                                    <p>Alice</p>
+                                    <span>Rank (20)</span>
+                                    <h5>2<sup>nd</sup></h5>
+                                    <h6>Win - $3000</h6>
+                                </div>
                             </div>
-                            <div>
-                                <p>Akash Bhardwaj</p>
-                                <span>112144</span>
-                                {/* <h5>(2)</h5> */}
+                            <div className='col-4 '>
+                                <div className='winner-user-card'>
+                                    <div className='winner-project'>
+                                        <img src={require('../assets/images/avatars/1.png')} />
+                                    </div>
+                                    <p>Alice</p>
+                                    <span>Rank (30)</span>
+                                    <h5>1<sup>st</sup></h5>
+                                    <h6>Win - $5000</h6>
+                                </div>
+                            </div>
+                            <div className='col-4 '>
+                                <div className='winner-user-card'>
+                                    <div className='winner-project'>
+                                        <img src={require('../assets/images/avatars/1.png')} />
+                                    </div>
+                                    <p>Alice</p>
+                                    <span>Rank (50)</span>
+                                    <h5>3<sup>rd</sup></h5>
+                                    <h6>Win - $2000</h6>
+                                </div>
                             </div>
                         </div>
-                        <div className='div_secont lavel_user'>
-                            <div className='frame_img_box'>
-                                <img src={require('../assets/images/first.png')} alt='profile-user' className='frame_img' />
-                                <img src={require('../assets/images/avatars/2.png')} className='user_img' alt='profile-user' />
+                        <div className='winer_user_list_box'>
+                            <div className='winer_user_list'>
+                                <div className='w-profile_img'>
+                                    <img src={require('../assets/images/avatars/19.png')} />
+                                </div>
+                                <div className='w-user-content'>
+                                    <h5>Akash Bhardwaj</h5>
+                                    <span>$1234</span>
+                                </div>
+                                <div className='winner_rank'>
+                                    <img src={require('../assets/images/rank.png')} />
+                                    <span>20</span>
+                                </div>
                             </div>
-
-
-                            <div>
-                                <p>Abhishek Goldy</p>
-                                <span>200000</span>
-                                {/* <h2>(1)</h2> */}
+                            <div className='winer_user_list'>
+                                <div className='w-profile_img'>
+                                    <img src={require('../assets/images/avatars/19.png')} />
+                                </div>
+                                <div className='w-user-content'>
+                                    <h5>Akash Bhardwaj</h5>
+                                    <span>$4234</span>
+                                </div>
+                                <div className='winner_rank'>
+                                    <img src={require('../assets/images/rank.png')} />
+                                    <span>20</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className='div_first lavel_user'>
-                            <div className='frame_img_box'>
-                                <img src={require('../assets/images/third.png')} alt='profile-user' className='frame_img' />
-                                <img src={require('../assets/images/avatars/3.png')} className='user_img' alt='profile-user' />
+                            <div className='winer_user_list'>
+                                <div className='w-profile_img'>
+                                    <img src={require('../assets/images/avatars/19.png')} />
+                                </div>
+                                <div className='w-user-content'>
+                                    <h5>Akash Bhardwaj</h5>
+                                    <span>$1534</span>
+                                </div>
+                                <div className='winner_rank'>
+                                    <img src={require('../assets/images/rank.png')} />
+                                    <span>20</span>
+                                </div>
                             </div>
-                            <div>
-                                <p>Sandeep sagar</p>
-                                <span>40000</span>
-                                {/* <h5>(3)</h5> */}
+                            <div className='winer_user_list'>
+                                <div className='w-profile_img'>
+                                    <img src={require('../assets/images/avatars/19.png')} />
+                                </div>
+                                <div className='w-user-content'>
+                                    <h5>Akash Bhardwaj</h5>
+                                    <span>$3000</span>
+                                </div>
+                                <div className='winner_rank'>
+                                    <img src={require('../assets/images/rank.png')} />
+                                    <span>20</span>
+                                </div>
+                            </div>
+                            <div className='winer_user_list'>
+                                <div className='w-profile_img'>
+                                    <img src={require('../assets/images/avatars/19.png')} />
+                                </div>
+                                <div className='w-user-content'>
+                                    <h5>Akash Bhardwaj</h5>
+                                    <span>$8000</span>
+                                </div>
+                                <div className='winner_rank'>
+                                    <img src={require('../assets/images/rank.png')} />
+                                    <span>20</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className='user_list'>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>4</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/4.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kartik</p>
-                                    <span>112144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>5</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/5.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Sunil</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p> 6</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/6.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Rahul</p>
-                                    <span>9000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>7</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/7.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Charu</p>
-                                    <span>2000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>8</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/8.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vikash</p>
-                                    <span>12000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>9</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/9.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kajal</p>
-                                    <span>120030</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>10</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/10.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vinod Kumar</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>4</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/4.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kartik</p>
-                                    <span>112144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>5</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/5.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Sunil</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>6</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/6.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Rahul</p>
-                                    <span>9000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>7</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/7.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Charu</p>
-                                    <span>2000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>8</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/8.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vikash</p>
-                                    <span>12000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>9</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/9.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kajal</p>
-                                    <span>120030</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>10</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/10.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vinod Kumar</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>4</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/4.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kartik</p>
-                                    <span>112144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>5</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/5.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Sunil</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>6</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/6.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Rahul</p>
-                                    <span>9000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>7</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/7.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Charu</p>
-                                    <span>2000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>8</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/8.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vikash</p>
-                                    <span>12000</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>9</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/9.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Kajal</p>
-                                    <span>120030</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>10</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/10.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Vinod Kumar</p>
-                                    <span>11002144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div className='user_list fiexd_user_profile'>
-                        <div className='list_item_box'>
-                            <div className='number_level'>
-                                <p>20</p>
-                                <span>Stage</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/4.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Akash Bhar... (You)</p>
-                                    <span>112144</span>
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Level</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
