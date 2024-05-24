@@ -59,9 +59,9 @@ export default function Winner() {
                             <div className='col-4 '>
                                 <div className='winner-user-card'>
                                     <div className='winner-project'>
-                                        <img src={require('../assets/images/avatars/1.png')} />
+                                        <img src={require('../assets/images/avatars/2.png')} />
                                     </div>
-                                    <p>Alice</p>
+                                    <p>Ahmed</p>
                                     <span>Rank (30)</span>
                                     <h5>1<sup>st</sup></h5>
                                     <h6>Win - $5000</h6>
@@ -70,9 +70,9 @@ export default function Winner() {
                             <div className='col-4 '>
                                 <div className='winner-user-card'>
                                     <div className='winner-project'>
-                                        <img src={require('../assets/images/avatars/1.png')} />
+                                        <img src={require('../assets/images/avatars/11.png')} />
                                     </div>
-                                    <p>Alice</p>
+                                    <p>David </p>
                                     <span>Rank (50)</span>
                                     <h5>3<sup>rd</sup></h5>
                                     <h6>Win - $2000</h6>
@@ -98,12 +98,12 @@ export default function Winner() {
                                     <img src={require('../assets/images/avatars/19.png')} />
                                 </div>
                                 <div className='w-user-content'>
-                                    <h5>Akash Bhardwaj</h5>
-                                    <span>$4234</span>
+                                    <h5>Ethan </h5>
+                                    <span>$100</span>
                                 </div>
                                 <div className='winner_rank'>
                                     <img src={require('../assets/images/rank.png')} />
-                                    <span>20</span>
+                                    <span>210</span>
                                 </div>
                             </div>
                             <div className='winer_user_list'>
@@ -111,12 +111,12 @@ export default function Winner() {
                                     <img src={require('../assets/images/avatars/19.png')} />
                                 </div>
                                 <div className='w-user-content'>
-                                    <h5>Akash Bhardwaj</h5>
-                                    <span>$1534</span>
+                                    <h5>George </h5>
+                                    <span>$500</span>
                                 </div>
                                 <div className='winner_rank'>
                                     <img src={require('../assets/images/rank.png')} />
-                                    <span>20</span>
+                                    <span>200</span>
                                 </div>
                             </div>
                             <div className='winer_user_list'>
@@ -124,12 +124,12 @@ export default function Winner() {
                                     <img src={require('../assets/images/avatars/19.png')} />
                                 </div>
                                 <div className='w-user-content'>
-                                    <h5>Akash Bhardwaj</h5>
+                                    <h5>Victor </h5>
                                     <span>$3000</span>
                                 </div>
                                 <div className='winner_rank'>
                                     <img src={require('../assets/images/rank.png')} />
-                                    <span>20</span>
+                                    <span>300</span>
                                 </div>
                             </div>
                             <div className='winer_user_list'>
@@ -137,12 +137,12 @@ export default function Winner() {
                                     <img src={require('../assets/images/avatars/19.png')} />
                                 </div>
                                 <div className='w-user-content'>
-                                    <h5>Akash Bhardwaj</h5>
+                                    <h5>Hiroshi </h5>
                                     <span>$8000</span>
                                 </div>
                                 <div className='winner_rank'>
                                     <img src={require('../assets/images/rank.png')} />
-                                    <span>20</span>
+                                    <span>350</span>
                                 </div>
                             </div>
                         </div>

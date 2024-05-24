@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from '../component/Header'
+import Footer from '../component/Footer';
 
 export default function HowToPlay() {
 
@@ -18,6 +19,11 @@ export default function HowToPlay() {
                 <h5>Objective:</h5>
                 <p>The goal of Game of Stones is to answer as many questions correctly as possible to earn points and climb the leaderboard.</p>
                 <p>Game of Stones features a variety of categories, including General Knowledge, Science, History, Movies & TV Shows, Sports, and more. Each category offers a different challenge, so be prepared for anything!</p>
+                <p>If you're unsure about a question, use a hint to narrow down your options. Each hint will eliminate one incorrect answer, making it easier for you to make an informed decision.</p>
+                <p><strong>Categories:</strong></p>
+                <p>Play to your strengths by selecting your preferred categories. Focus on subjects you're knowledgeable about to maximize your chances of success.</p>
+                <p><strong>Feedback:</strong></p>
+                <p>Have suggestions or encountered any issues while playing? We're here to help! Feel free to provide feedback or report any bugs, and our team will work diligently to address them.</p>
                 <p><strong>Answering Questions:</strong></p>
                 <p>Read each question carefully and select the correct answer from the multiple-choice options provided.</p>
                 <p>You'll earn points for every correct answer, so choose wisely and trust your instincts.</p>
@@ -30,6 +36,7 @@ export default function HowToPlay() {
                 <p>Above all, remember to have fun! Whether you're playing to test your knowledge, challenge your friends, or simply pass the time, Game of Stones offers an immersive and entertaining trivia experience for players of all ages.
                     Now that you know the rules, it's time to embark on your epic journey to become the ultimate Quiz Champion. Are you ready to claim your place among the legends of Game of Stones? Let the quest for knowledge begin!</p>
             </div>
+            <Footer />
         </div>
     )
 }

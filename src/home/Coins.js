@@ -20,7 +20,7 @@ export default function Coins() {
 
     const playBtn = () => {
         if (cat) {
-            navigate(-1)
+            navigate('/home')
         } else {
             toast.error('Please buy coins')
         }

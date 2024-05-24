@@ -77,13 +77,13 @@ export default function Header() {
                 </div>
                 <ul className='menu_list'>
                     <li><Link to={"/leaderboard"}>Leaderboard</Link></li>
-                    <li><Link to={"/coins"}>Stones</Link></li>
-                    <li><Link to={"/quiz"}>Quiz</Link></li>
+                    {/* <li><Link to={"/coins"}>Stones</Link></li> */}
+                    {/* <li><Link to={"/quiz"}>Quiz</Link></li> */}
                     <li><Link to={"/coins"}>Buy Questions</Link></li>
                     <li><Link to={"#"}>My Account</Link></li>
                     <li><Link to={"/winner"}>Winners</Link></li>
                     <li><Link to={"/how-to-play"}>How to Play</Link></li>
-                    <li><Link to={"/help"}>Help</Link></li>
+                    <li><Link to={"/contact"}>Contact Us</Link></li>
                     <li><Link>Setting</Link></li>
 
                 </ul>

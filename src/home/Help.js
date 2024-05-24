@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from '../component/Header'
+import Footer from '../component/Footer';
 
 export default function Help() {
 
@@ -26,6 +27,7 @@ export default function Help() {
                 <p><strong>Feedback:</strong></p>
                 <p>Have suggestions or encountered any issues while playing? We're here to help! Feel free to provide feedback or report any bugs, and our team will work diligently to address them.</p>
             </div>
+            <Footer />
         </div>
     )
 }

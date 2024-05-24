@@ -97,7 +97,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>1000</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -111,12 +111,12 @@ export default function Leaderboard() {
                                 </div>
                                 <div className='prifile_content'>
                                     <p>Nadia</p>
-                                    {/* <span>11002144</span> */}
+                                    {/* <span>1340</span> */}
                                 </div>
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>1567</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -129,19 +129,19 @@ export default function Leaderboard() {
                                     <img src={require('../assets/images/avatars/6.png')} alt='profile-user' />
                                 </div>
                                 <div className='prifile_content'>
-                                    <p>Zainab</p>
-                                    {/* <span>9000</span> */}
+                                    <p>2045</p>
+                                    {/* <span>1</span> */}
                                 </div>
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                {/* <span>22345</span> */}
+                                <span>2456</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
                                 <p>7</p>
-                                <span>Rank</span>
+                                <span>8345</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -154,7 +154,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>10344</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -173,7 +173,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>12345</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -192,7 +192,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>15676</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -211,12 +211,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>18454</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>4</p>
+                                <p>11</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -235,7 +235,7 @@ export default function Leaderboard() {
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>5</p>
+                                <p>12</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -249,12 +249,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>24567</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>6</p>
+                                <p>13</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -268,12 +268,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>30000</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>7</p>
+                                <p>14</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -287,12 +287,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>35007</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>8</p>
+                                <p>15</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -306,12 +306,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>37546</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>9</p>
+                                <p>16</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -325,12 +325,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>43454</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>10</p>
+                                <p>17</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -344,12 +344,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>45678</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>4</p>
+                                <p>18</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -363,12 +363,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>56789</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>5</p>
+                                <p>19</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -382,12 +382,12 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>86543</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
-                                <p>6</p>
+                                <p>20</p>
                                 <span>Rank</span>
                             </div>
                             <div className='user_profile'>
@@ -401,105 +401,30 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>90876</span>
                             </div>
                         </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>7</p>
-                                <span>Rank</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/7.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Maximilian </p>
-                                    {/* <span>2000</span> */}
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Stones</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>8</p>
-                                <span>Rank</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/8.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Camila </p>
-                                    {/* <span>12000</span> */}
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Stones</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>9</p>
-                                <span>Rank</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/9.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Isabella </p>
-                                    {/* <span>120030</span> */}
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Stones</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
-                        <div className='list_item_box scroll_box_right'>
-                            <div className='number_level'>
-                                <p>10</p>
-                                <span>Rank</span>
-                            </div>
-                            <div className='user_profile'>
-                                <div className='picture_img'>
-                                    <img src={require('../assets/images/avatars/10.png')} alt='profile-user' />
-                                </div>
-                                <div className='prifile_content'>
-                                    <p>Olivia </p>
-                                    {/* <span>11002144</span> */}
-                                </div>
-                            </div>
-                            <div className='level_box'>
-                                <p>Stones</p>
-                                <span>22345</span>
-                            </div>
-                        </div>
+                       
 
                     </div>
-                    <div className='user_list fiexd_user_profile d-none'>
+                    <div className='user_list fiexd_user_profile '>
                         <div className='list_item_box'>
                             <div className='number_level'>
-                                <p>20</p>
-                                <h5>(2)</h5>
+                                <p>4</p>
+                                <span>Rank</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
                                     <img src={require('../assets/images/avatars/4.png')} alt='profile-user' />
                                 </div>
                                 <div className='prifile_content'>
-                                    <p>Akash Bhar... (You)</p>
-                                    <h5>(1)</h5>
+                                    <p>Mohamed (You)</p>
+                                   
                                 </div>
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <h5>(3)</h5>
+                                <h5>1000</h5>
                             </div>
                         </div>
                     </div>

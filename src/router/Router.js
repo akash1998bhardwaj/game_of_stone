@@ -22,6 +22,7 @@ import Coins from '../home/Coins';
 import QuizeFormats from '../home/QuizeFormats';
 import QuizTypes from '../home/QuizTypes';
 import Prize from '../home/Prize';
+import Contact from '../home/Contact';
 
 export default function Router() {
     const [loggedIn, setIsLoggedIn] = useState(false);
@@ -42,7 +43,7 @@ export default function Router() {
                 <Route path="/quiz4" element={<Quiz4 />} /> */}
                 <Route path="/result" element={<Result />} />
                 <Route path="/how-to-play" element={<HowToPlay />} />
-                <Route path="/help" element={<Help />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/leaderboard" element={<Leaderboard />} />
                 <Route path="/prize" element={<Prize />} />
