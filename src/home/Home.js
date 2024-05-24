@@ -79,7 +79,7 @@ export default function Home() {
                                 </div>
                                 <div className='board_content'>
                                     <h6>Stones</h6>
-                                    <p>Today - 100</p>
+                                    <p>Earned - 100</p>
                                     <p>Total - 500</p>
                                 </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
                                 <div className='board_content'>
                                     <h6>Questions</h6>
                                     <p>Played - 100</p>
-                                    <p>Remain - 500</p>
+                                    <p>Remaining - 500</p>
                                 </div>
 
                             </li>
@@ -107,7 +107,7 @@ export default function Home() {
                     </div>
                     <div className='three-button-section'>
                         <a href='javascript:void(0)' onClick={() => playSoundBtn('/prize')}><img src={require('../assets/images/prize.gif')} alt='quiz' /> Prizes</a>
-                        <a href='javascript:void(0)' onClick={() => playSoundBtn('/winner')}><img src={require('../assets/images/winner.gif')} alt='quiz' /> Winner</a>
+                        <a href='javascript:void(0)' onClick={() => playSoundBtn('/winner')}><img src={require('../assets/images/winner.gif')} alt='quiz' /> Winners</a>
                         {/* <Link to={"/cat"}><img src={require('../assets/images/cat.png')} alt='quiz' /> Category</Link> */}
                     </div>
 

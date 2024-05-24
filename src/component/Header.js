@@ -33,7 +33,7 @@ export default function Header() {
                         <div className='logo-section'>
                             <Link to={"/profile-theme"}>
                                 <div className='header_user_box'>
-                                    <img src={profile ? profile : require('../assets/images/user_img.png')} />
+                                    <img src={profile ? profile : require('../assets/images/avatars/2.png')} />
                                 </div>
                             </Link>
                         </div>
@@ -77,11 +77,13 @@ export default function Header() {
                 </div>
                 <ul className='menu_list'>
                     <li><Link to={"/leaderboard"}>Leaderboard</Link></li>
-                    <li><Link to={"/coins"}>Coins</Link></li>
+                    <li><Link to={"/coins"}>Stones</Link></li>
                     <li><Link to={"/quiz"}>Quiz</Link></li>
-                    <li><Link to={"/quize-formats"}>Quiz Formats</Link></li>
-                    <li><Link to={"/quiz-types"}>Quiz Types</Link></li>
-                    <li><Link to={"/cat"}>Category</Link></li>
+                    <li><Link to={"/coins"}>Buy Questions</Link></li>
+                    <li><Link to={"#"}>My Account</Link></li>
+                    <li><Link to={"/winner"}>Winners</Link></li>
+                    <li><Link to={"/how-to-play"}>How to Play</Link></li>
+                    <li><Link to={"/help"}>Help</Link></li>
                     <li><Link>Setting</Link></li>
 
                 </ul>

@@ -29,8 +29,11 @@ const Quiz = () => {
     const [selectedOption, setSelectedOption] = useState();
     const [answerCheck, setAnswerCheck] = useState(undefined);
     const [currentAnswer, setCurrentAnswer] = useState(null);
-    const [total, setTotal] = useState(0)
     const [loading, setLoading] = useState(false);
+    const [total, setToal] = useState(500);
+    const [today, setToday] = useState(100);
+    const [played, setPlayed] = useState(100);
+    const [remain, setRemain] = useState(500);
     const audioRef = useRef(null);
     const audioRef1 = useRef(null);
     const audioRef2 = useRef(null);
@@ -139,6 +142,14 @@ const Quiz = () => {
         setSelectedOption(option)
         setAnswers([...answers, option]);
         setSkipTiming(10);
+        console.log('option quiz', option)
+        if (option?.correct == true) {
+            setToday(today + 10)
+            setToal(total + 10)
+        }
+
+        setPlayed(played + 1)
+        setRemain(remain - 1)
         const audioPlayer = option.correct ? audioRef2.current : audioRef1.current;
         if (audioPlayer) {
             try {
@@ -158,7 +169,7 @@ const Quiz = () => {
             setCurrentAnswer(null);
             setSelectedOption(null);
             if ((currentStep + 1) == steps.length) {
-                dispatch(setUser({ ...user, result: [...answers, option] }));
+                dispatch(setUser({ ...user, result: [...answers, option], resultMeta: { today, total, played, remain } }));
                 navigate('/result')
             }
             // setLoading(false)
@@ -220,8 +231,8 @@ const Quiz = () => {
                                                     </div>
                                                     <div className='board_content'>
                                                         <h6>Stones</h6>
-                                                        <p>Today - 100</p>
-                                                        <p>Total - 500</p>
+                                                        <p>Earned - {today}</p>
+                                                        <p>Total - {total}</p>
                                                     </div>
 
                                                 </li>
@@ -232,8 +243,8 @@ const Quiz = () => {
                                                     </div>
                                                     <div className='board_content'>
                                                         <h6>Questions</h6>
-                                                        <p>Played - 100</p>
-                                                        <p>Remain - 500</p>
+                                                        <p>Played - {played}</p>
+                                                        <p>Remaining - {remain}</p>
                                                     </div>
 
                                                 </li>

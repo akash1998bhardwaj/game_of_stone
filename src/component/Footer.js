@@ -7,11 +7,9 @@ export default function Footer() {
             <footer>
                 <div className='footer-links'>
                     <ul>
-                        <li><Link to={"/leaderboard"}>Home</Link></li>
-                        <li><Link to={"/how-to-play"}>How to Play</Link></li>
-                        <li><Link to={"/help"}>Help</Link></li>
-                        <li><Link to={"#"}>Terms</Link></li>
-                        <li><Link to={"/coins"}>Buy Coins</Link></li>
+                        <li><Link to={"/home"}>Home</Link></li>
+                        <li><Link to={"/leaderboard"}>Leaderboard</Link></li>
+                        <li><Link to={"/coins"}>Buy Questions</Link></li>
                         
                     </ul>
                 </div>

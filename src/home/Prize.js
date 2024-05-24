@@ -52,17 +52,17 @@ export default function Prize() {
                                         <span>st</span>
                                     </div>
                                     <h4>Prize <img src={require('../assets/images/prize.gif')} /></h4>
-                                    <h6>5000 USD $</h6>
+                                    <h6>$5000</h6>
                                 </div>
                             </div>
                             <div className='col-6 '>
                                 <div className='winner-user-card winner-user-card-prize'>
                                     <div className='winner-project prize-box_'>
                                         <h4>2</h4>
-                                        <span>ed</span>
+                                        <span>nd</span>
                                     </div>
                                     <h4>Prize <img src={require('../assets/images/prize.gif')} /></h4>
-                                    <h6>3000 USD $</h6>
+                                    <h6>$3000</h6>
                                 </div>
                             </div>
                             <div className='col-6 '>
@@ -72,17 +72,17 @@ export default function Prize() {
                                         <span>rd</span>
                                     </div>
                                     <h4>Prize <img src={require('../assets/images/prize.gif')} /></h4>
-                                    <h6>2000 USD $</h6>
+                                    <h6>$2000</h6>
                                 </div>
                             </div>
                             <div className='col-6 '>
                                 <div className='winner-user-card winner-user-card-prize'>
                                     <div className='winner-project prize-box_'>
                                         <h4>4</h4>
-                                        <span>rd</span>
+                                        <span>th</span>
                                     </div>
                                     <h4>Prize <img src={require('../assets/images/prize.gif')} /></h4>
-                                    <h6>500 USD $</h6>
+                                    <h6>$500</h6>
                                 </div>
                             </div>
 

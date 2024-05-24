@@ -6,6 +6,7 @@ import audioFile from '../assets/images/whistle.mp3';
 import ReactAudioPlayer from 'react-audio-player';
 
 import confetti from 'canvas-confetti';
+import Footer from '../component/Footer';
 
 export default function Aviater() {
     const audioRef = useRef(null);
@@ -238,6 +239,7 @@ export default function Aviater() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

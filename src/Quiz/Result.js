@@ -27,7 +27,7 @@ export default function Result() {
             const incorrectAnswers = user?.result?.filter(answer => answer.correct === false);
 
             // Filter skipped answers (undefined or empty objects)
-            const skippedAnswers = user?.result?.filter(answer => answer?.skip === '' );
+            const skippedAnswers = user?.result?.filter(answer => answer?.skip === '');
 
             // Get lengths of each category
             const correctAnswersLength = correctAnswers?.length;
@@ -40,11 +40,11 @@ export default function Result() {
             const percent = ((correctAnswersLength ? correctAnswersLength : 0) * 100) / user?.result?.length;
 
             if (percent >= 80) {
-                setColor('green')
+                setColor('#008000a1')
             } else if (percent >= 40 && percent < 80) {
-                setColor('orange')
+                setColor('#ffa500a1')
             } else if (percent < 40) {
-                setColor('red')
+                setColor('#ff0000a1')
             }
 
         }
@@ -58,7 +58,7 @@ export default function Result() {
             <div className='winning_page'>
                 <div className='question_section' style={{ backgroundColor: color }}>
 
-                    <h5>Stage 1</h5>
+                    {/* <h5>Stage 1</h5>
                     <h3>GAME OVER</h3>
                     <div className='circle_progress_one'>
                         <div className='circle_progress'>
@@ -92,10 +92,10 @@ export default function Result() {
 
                         </div>
 
-                    </div>
+                    </div> */}
                     <div className='total_coins_earn'>
                         <h6>
-                            Total earn  <span>5 coins
+                            Total Earned  <span>5 Stones
                                 <img src={require('../assets/images/stone.png')} />
 
                             </span>
@@ -104,46 +104,54 @@ export default function Result() {
                     <div className='answers_board'>
                         <ul>
                             <li>
-                                <p>Right</p>
+                                <img src={require('../assets/images/check-mark1.png')} />
                                 <h5>{correct}</h5>
                             </li>
                             <li>
-                                <p>Wrong</p>
+                                <img src={require('../assets/images/cross.png')} />
                                 <h5>{incorrect}</h5>
                             </li>
-                            <li>
-                                <p>Skip</p>
-                                <h5>{skip}</h5>
-                            </li>
+
                         </ul>
+                    </div>
+                    <div className='leader_board_header _leader_board_header_new _leader_board_header_new_quiz'>
+                        <ul>
+                            <li>
+                                <div className='board_header_t'>
+                                    <img src={require('../assets/images/stone.png')} />
+
+                                </div>
+                                <div className='board_content'>
+                                    <h6>Stones</h6>
+                                    <p>Earned - {data?.resultMeta?.today}</p>
+                                    <p>Total - {data?.resultMeta?.total}</p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div className='board_header_t'>
+                                    <img src={require('../assets/images/question.png')} />
+
+                                </div>
+                                <div className='board_content'>
+                                    <h6>Questions</h6>
+                                    <p>Played - {data?.resultMeta?.played}</p>
+                                    <p>Remaining - {data?.resultMeta?.remain}</p>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div className='play_now'>
+                        <Link to={"/coins"} className='btn-hover color-1' >Continue</Link>
                     </div>
                 </div>
 
                 {/* <h2>Winner!</h2> */}
                 {/* <h5>Akash Bhardwaj</h5> */}
 
-                <div className='leader_board_header'>
-                    <ul>
-                        <li>
-                            <img src={require('../assets/images/rank.png')} />
-                            <p>Rank</p>
-                            <span>20</span>
-                        </li>
-                        <li>
-                            <img src={require('../assets/images/stones.png')} />
-                            <p>Stone</p>
-                            <span>1200</span>
-                        </li>
-                        <li>
-                            <img src={require('../assets/images/world.png')} />
-                            <p>Score</p>
-                            <span>300</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className='play_now'>
-                    <Link to={"/quiz"} className='btn-hover color-1' >Play Again</Link>
-                </div>
+
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import Header from '../component/Header'
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
+import Footer from '../component/Footer';
 
 export default function Leaderboard() {
 
@@ -504,6 +505,7 @@ export default function Leaderboard() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
