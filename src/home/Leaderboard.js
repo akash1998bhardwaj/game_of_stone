@@ -97,7 +97,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>1000</span>
+                                <span>90876</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -116,7 +116,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>1567</span>
+                                <span>86543</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -129,19 +129,19 @@ export default function Leaderboard() {
                                     <img src={require('../assets/images/avatars/6.png')} alt='profile-user' />
                                 </div>
                                 <div className='prifile_content'>
-                                    <p>2045</p>
+                                    <p>Lucky</p>
                                     {/* <span>1</span> */}
                                 </div>
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>2456</span>
+                                <span>56789</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
                             <div className='number_level'>
                                 <p>7</p>
-                                <span>8345</span>
+                                <span>Rank</span>
                             </div>
                             <div className='user_profile'>
                                 <div className='picture_img'>
@@ -154,7 +154,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>10344</span>
+                                <span>45678</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -173,7 +173,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>12345</span>
+                                <span>43454</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -192,7 +192,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>15676</span>
+                                <span>37546</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -211,7 +211,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>18454</span>
+                                <span>35007</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -230,7 +230,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>22345</span>
+                                <span>30000</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -268,7 +268,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>30000</span>
+                                <span>22345</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -287,7 +287,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>35007</span>
+                                <span>18454</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -306,7 +306,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>37546</span>
+                                <span>15676</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -325,7 +325,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>43454</span>
+                                <span>12345</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -344,7 +344,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>45678</span>
+                                <span>10344</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -363,7 +363,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>56789</span>
+                                <span>2456</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -382,7 +382,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>86543</span>
+                                <span>1567</span>
                             </div>
                         </div>
                         <div className='list_item_box scroll_box_right'>
@@ -401,7 +401,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <span>90876</span>
+                                <span>1000</span>
                             </div>
                         </div>
                        
@@ -424,7 +424,7 @@ export default function Leaderboard() {
                             </div>
                             <div className='level_box'>
                                 <p>Stones</p>
-                                <h5>1000</h5>
+                                <h5>90876</h5>
                             </div>
                         </div>
                     </div>
